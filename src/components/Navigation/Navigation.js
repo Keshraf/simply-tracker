@@ -8,16 +8,13 @@ const Navigation = () => {
         <h1 className={styles.title}>Simply Track...</h1>
         <section className={styles.linkList}>
           <Link to="/" className={styles.link}>
-            Home
-          </Link>
-          <Link to="/analytics" className={styles.link}>
-            Analytics
+            Habits
           </Link>
           <Link to="/create" className={styles.link}>
             Create
           </Link>
-          <Link to="/habits" className={styles.link}>
-            All Habits
+          <Link to="/about" className={styles.link}>
+            About
           </Link>
         </section>
       </header>

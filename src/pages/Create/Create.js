@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import styles from "./Create.module.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import home from "../../assets/home.png";
 import EmojiBox from "../../components/EmojiBox/EmojiBox";
 
@@ -10,14 +10,14 @@ const Create = ({ info, setInfo }) => {
   const [emoji, setEmoji] = useState(
     "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/apple/285/waving-hand_1f44b.png"
   );
-  const [goals, setGoals] = useState();
-  const [done, setDone] = useState();
+  const [goals, setGoals] = useState(1);
+  const [done, setDone] = useState(0);
   const [emojiBox, setEmojiBox] = useState(false);
 
   const openEmojiBox = () => {
     setEmojiBox(true);
   };
-
+  const navigate = useNavigate();
   const submitHandler = () => {
     const newItem = {
       id: uuidv4(),
@@ -37,6 +37,8 @@ const Create = ({ info, setInfo }) => {
       updatedTasks.push(newItem);
       return updatedTasks;
     });
+
+    navigate("/");
   };
 
   return (
@@ -83,7 +85,7 @@ const Create = ({ info, setInfo }) => {
             </div>
             <div className={styles.inputProgress}>
               <label htmlFor="progress" className={styles.label}>
-                Progress <i>(Max: 12)</i>
+                Progress <i>(Max: 11)</i>
               </label>
               <input
                 id="progress"
@@ -91,7 +93,7 @@ const Create = ({ info, setInfo }) => {
                 placeholder="done"
                 value={done}
                 onChange={(event) => setDone(event.target.value)}
-                max={12}
+                max={11}
                 min={1}
               ></input>
             </div>

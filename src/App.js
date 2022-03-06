@@ -1,8 +1,7 @@
 import "./App.css";
 import Home from "./pages/Home/Home";
 import Create from "./pages/Create/Create";
-import Habits from "./pages/Habits/Habits";
-import Analytics from "./pages/Analytics/Analytics";
+import About from "./pages/About/About";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
 import { useState } from "react";
@@ -49,8 +48,7 @@ function App() {
               path="/create"
               element={<Create info={info} setInfo={setInfo} />}
             />
-            <Route path="/analytics" element={<Analytics />} />
-            <Route path="/habits" element={<Habits />} />
+            <Route path="/about" element={<About />} />
           </Routes>
         </section>
       </BrowserRouter>

@@ -43,7 +43,7 @@ const EmojiData = {
     "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/apple/285/artist-palette_1f3a8.png",
   book: "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/apple/285/closed-book_1f4d5.png",
   read: "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/apple/285/open-book_1f4d6.png",
-  vlog: "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/apple/285/open-book_1f4d6.png",
+  vlog: "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/apple/285/movie-camera_1f3a5.png",
   pencil:
     "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/apple/285/pencil_270f-fe0f.png",
   brush:

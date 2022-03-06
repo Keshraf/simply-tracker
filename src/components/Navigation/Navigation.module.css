@@ -1,10 +1,10 @@
 .line {
-  width: 1200px;
+  width: 1100px;
   height: 1px;
 }
 
 .navBar {
-  width: 1200px;
+  width: 1100px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -21,7 +21,7 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  width: 400px;
+  width: 300px;
 }
 
 .link {
@@ -53,4 +53,11 @@
 .link:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin-left: 0;
 }

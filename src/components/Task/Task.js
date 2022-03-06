@@ -4,7 +4,11 @@ import { useState } from "react";
 import CompletedTask from "./CompletedTask";
 
 const Task = (props) => {
-  const [completed, setCompleted] = useState(false);
+  let initialStatus = false;
+  if (props.done === props.goals) {
+    initialStatus = true;
+  }
+  const [completed, setCompleted] = useState(initialStatus);
 
   let blobs = [
     styles.blob1,
