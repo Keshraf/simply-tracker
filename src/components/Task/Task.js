@@ -1,7 +1,11 @@
 import styles from "./Task.module.css";
 import Controls from "../Controls/Controls";
+import { useState } from "react";
+import CompletedTask from "./CompletedTask";
 
 const Task = (props) => {
+  const [completed, setCompleted] = useState(false);
+
   let blobs = [
     styles.blob1,
     styles.blob2,
@@ -28,20 +32,33 @@ const Task = (props) => {
 
   return (
     <>
-      <div className={styles.box}>
-        <div className={styles.symbol}>
-          <img src={props.emoji} alt="blog" />
-          {arr.map((item) => (
-            <div className={item} />
-          ))}
-        </div>
-        <Controls
+      {completed && (
+        <CompletedTask
           goals={props.goals}
           done={props.done}
           change={props.change}
           id={props.id}
+          setCompleted={setCompleted}
         />
-      </div>
+      )}
+
+      {!completed && (
+        <div className={styles.box}>
+          <div className={styles.symbol}>
+            <img src={props.emoji} alt="blog" />
+            {arr.map((item) => (
+              <div className={item} />
+            ))}
+          </div>
+          <Controls
+            goals={props.goals}
+            done={props.done}
+            change={props.change}
+            id={props.id}
+            setCompleted={setCompleted}
+          />
+        </div>
+      )}
     </>
   );
 };

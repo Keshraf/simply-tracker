@@ -9,3 +9,11 @@
   margin-left: 23px;
   margin-right: 25px;
 }
+
+img {
+  cursor: pointer;
+}
+
+img:hover {
+  transform: scale(1.1);
+}

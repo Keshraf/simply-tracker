@@ -8,6 +8,9 @@ const Controls = (props) => {
     if (props.done === props.goals) {
       return;
     }
+    if (props.done === props.goals - 1) {
+      props.setCompleted(true);
+    }
     props.change((prevState) => {
       let changedItem = prevState.map((item) => {
         if (item.id === props.id) {
