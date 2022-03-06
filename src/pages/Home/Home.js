@@ -1,22 +1,24 @@
-const Home = () => {
-  const info = [
-    {
-      habit: "Run Everyday",
-      goal: 8,
-      done: 3,
-    },
-    {
-      habit: "Drink Water",
-      goal: 10,
-      done: 5,
-    },
-  ];
+import styles from "./Home.module.css";
+import Task from "../../components/Task/Task";
+import Navigation from "../../components/Navigation/Navigation";
 
+const Home = ({ info, setInfo }) => {
   return (
-    <div>
-      <h1>Home Page</h1>
-      <p>uwr9gfv7whru9fwhufhew9vhuwh9vs</p>
-    </div>
+    <>
+      <Navigation />
+      <div className={styles.layout}>
+        {info.map((item) => (
+          <Task
+            goals={item.goal}
+            done={item.done}
+            key={item.id}
+            change={setInfo}
+            id={item.id}
+            emoji={item.emoji}
+          />
+        ))}
+      </div>
+    </>
   );
 };
 
