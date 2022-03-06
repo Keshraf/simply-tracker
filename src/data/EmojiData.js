@@ -11,17 +11,17 @@ const EmojiData = {
   manwalking:
     "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/apple/285/person-walking_1f6b6.png",
   womanwalking:
-    "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/apple/285/person-walking_1f6b6.png",
+    "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/apple/285/woman-walking_1f6b6-200d-2640-fe0f.png",
   manrunning:
     "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/apple/285/person-running_1f3c3.png",
   womanrunning:
     "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/apple/285/woman-running_1f3c3-200d-2640-fe0f.png",
   manswim:
-    "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/apple/285/woman-running_1f3c3-200d-2640-fe0f.png",
+    "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/apple/285/man-swimming_1f3ca-200d-2642-fe0f.png",
   womanswim:
     "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/apple/285/woman-swimming_1f3ca-200d-2640-fe0f.png",
   liftman:
-    "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/apple/285/person-lifting-weights_1f3cb-fe0f.png",
+    "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/apple/285/man-lifting-weights_1f3cb-fe0f-200d-2642-fe0f.png",
   womanlift:
     "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/apple/285/woman-lifting-weights_1f3cb-fe0f-200d-2640-fe0f.png",
   manbike:
