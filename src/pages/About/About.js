@@ -19,7 +19,7 @@ const Habits = () => {
           <h1 className={styles.heroTitle}>
             Minimalistic and Simple Application to achieve daily goals.{" "}
           </h1>
-          <Link to="/habits">
+          <Link to="/">
             <button className={styles.heroButton}>Get Started</button>
           </Link>
         </section>
