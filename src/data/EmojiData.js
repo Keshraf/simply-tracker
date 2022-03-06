@@ -56,6 +56,10 @@ const EmojiData = {
     "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/apple/285/soccer-ball_26bd.png",
   basketball:
     "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/apple/285/basketball_1f3c0.png",
+  network:
+    "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/apple/285/globe-with-meridians_1f310.png",
+  clean:
+    "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/apple/285/sponge_1f9fd.png",
 };
 
 export default EmojiData;
